@@ -123,6 +123,10 @@ This graph shows that Alice is the most well-connected friend in the group, with
 
 You can use the Discord Profile Generator and Obsidian to create a graph of your own friend group to visualize how it looks from your perspective. This can be a helpful way to identify friends who you may not be connecting with as much, or to identify clusters of friends who share common interests.
 
+partial exemple of a network
+![image](https://github.com/Linkedeline/Discord-netwrok-mapper/assets/81112372/54a22847-529c-46bb-b1ff-8b5686bc0953)
+
+
 ### Conclusion
 
 Using the Discord Profile Generator with Obsidian is a great way to keep track of your Discord friends and stay connected with them. The backlinks feature makes it easy to see how your friends are connected to each other and to your other notes in Obsidian.
