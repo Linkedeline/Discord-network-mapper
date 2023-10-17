@@ -52,9 +52,7 @@ alias: 1234567890 Username
 1. Clone this repository to your computer.
 2. Install the required dependencies:
 
-
-pip install requests discord-py
-
+`pip install requests`
 
 3. Replace the `Discord_token` and `Discord_ID` variables in the script with your own Discord token and user ID.
 4. Run the script:
