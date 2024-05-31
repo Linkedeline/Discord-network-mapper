@@ -19,6 +19,13 @@ def make_my_profile(user,relation):
     theID = user['user']['id']
     avatar = user['user']['avatar']
     img = f"https://cdn.discordapp.com/avatars/{theID}/{avatar}.png?size=4096"
+    # creates the users table
+    con = sqlite3.connect('user.db')
+    con.commit()
+    con.close()
+    c = con.cursor()
+    c.execute('''CREATE TABLE IF NOT EXISTS users  (id  TEXT PRIMARY KEY, username TEXT)''')
+    
     download_image(img,name+'.png')
     print(name)
     print(relation)
@@ -83,11 +90,7 @@ def create_and_write_file(file_name,line):
 def add_DB(userID, username):
     con = sqlite3.connect('user.db')
     c = con.cursor()
-    c.execute('''CREATE TABLE IF NOT EXISTS users  (id  TEXT PRIMARY KEY, username TEXT)''')
     c.execute("INSERT OR REPLACE INTO users (id, username) VALUES (?,?)", (userID, username))
-    con.commit()
-    con.close()
-   
     
 def check_user(user_id):
     con = sqlite3.connect('user.db')
